@@ -3,16 +3,12 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'src/vendor.ts',
-      'src/test-setup.ts',
-      'src/**/*.spec.ts'
+      'src/test-setup.ts'
     ],
     exclude: [
     ],
     preprocessors: {
-      'src/vendor.ts': ['webpack'],
-      'src/test-setup.ts': ['webpack'],
-      'src/**/*.spec.ts': ['webpack']
+      'src/test-setup.ts': ['webpack']
     },
     reporters: ['spec'],
     port: 9876,
@@ -21,6 +17,7 @@ module.exports = function(config) {
     autoWatch: true,
     browsers: ['PhantomJS'],
     singleRun: false,
-    concurrency: Infinity
+    concurrency: Infinity,
+    webpack: require('./webpack.test')
   })
 }
