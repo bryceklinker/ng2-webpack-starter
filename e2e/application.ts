@@ -21,7 +21,7 @@ export class Application {
 
         let isStarted = false;
         this.devServer = new WebpackDevServer(compiler);
-        this.devServer.listen(this.port, () => {
+        this.devServer.listen(this.port, 'localhost', () => {
             isStarted = true;
         });
 

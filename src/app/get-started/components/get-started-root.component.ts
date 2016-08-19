@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    template: ''
+    template: require('../templates/get-started-root.component.html')
 })
 export class GetStartedRootComponent {
 
