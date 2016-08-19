@@ -11,6 +11,6 @@ export class AppComponent  {
     }
 
     navigate(url: string) {
-        this.router.navigate(['/get-started']);
+        this.router.navigate([url]);
     }
 }

@@ -27,4 +27,12 @@ describe('AppComponent', () => {
         getStartedItem.querySelector('a').click();
         expect(router.navigate).toHaveBeenCalledWith(['/get-started']);
     })
+
+    it('should navigate to welcome', () => {
+        spyOn(router, 'navigate').and.callThrough();
+        const fixture = getTestBed().createComponent(AppComponent);
+        const brandLink = fixture.nativeElement.querySelector('.navbar-brand');
+        brandLink.click();
+        expect(router.navigate).toHaveBeenCalledWith(['/welcome'])
+    })
 });
