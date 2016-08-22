@@ -17,4 +17,4 @@ Bundle application:
 `npm run build`
 
 ## Open Get Started
-Start the dev server (`npm start`). Then open a browser to http://localhost:8080/get-started/
+Start the dev server (`npm start`). Then open a browser to (http://localhost:8080/get-started/)[http://localhost:8080/get-started/]
