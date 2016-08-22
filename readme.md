@@ -15,3 +15,6 @@ Run end-to-end tests:
 
 Bundle application: 
 `npm run build`
+
+## Open Get Started
+Start the dev server (`npm start`). Then open a browser to http://localhost:8080/get-started/
