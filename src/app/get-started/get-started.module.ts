@@ -7,6 +7,7 @@ import { WhatsIncludedComponent } from './whats-included/components/whats-includ
 import { BundlingComponent } from './bundling/components/bundling.component';
 import { EndToEndComponent } from './end-to-end/components/end-to-end.component';
 import { UnitTestsComponent } from './unit-tests/components/unit-tests.component';
+import { StartComponent } from './start/components/start.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { UnitTestsComponent } from './unit-tests/components/unit-tests.component
         WhatsIncludedComponent,
         UnitTestsComponent,
         EndToEndComponent,
-        BundlingComponent
+        BundlingComponent,
+        StartComponent
     ]
 })
 export class GetStartedModule {
