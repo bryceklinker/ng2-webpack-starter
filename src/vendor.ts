@@ -1,8 +1,7 @@
 import 'bootstrap-loader';
 
-import 'es6-shim';
+import 'core-js/shim';
 import 'zone.js/dist/zone';
-import 'reflect-metadata';
 import 'rxjs';
 
 import '@angular/core';
